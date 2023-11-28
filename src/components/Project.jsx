@@ -1,3 +1,11 @@
+// import Canyon from '../assets/images/canyon.jpg'
+// import Clouds from '../assets/images/clouds.jpg'
+// import Laptop from '../assets/images/laptop.jpg'
+// import Lilypads from '../assets/images/lilypads.jpg'
+// import Meeting from '../assets/images/meeting.jpg'
+// import Paper from '../assets/images/paper.jpg'
+// import ProfilePic from '../assets/images/profile-pic-yellow.jpg'
+
 function Project({ project }) {
   return (
     <div class="card" key={project.id}>
