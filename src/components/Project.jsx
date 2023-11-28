@@ -1,7 +1,11 @@
-const groceries = [
+import Card from "./Card"
+
+const projects = [
     {
-        id: "",
-        name: ""
+        id: 1,
+        title: "Weather Dashboard",
+        href: "https://gfuselier.github.io/weather-dashboard",
+        
     }
 ]
 
