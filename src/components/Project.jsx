@@ -5,9 +5,11 @@ function Project({ project }) {
     <div className="card" key={project.id}>
       <img className="card-img-top" src={project.image} alt={project.title} height="200px" width="200px"/>
       <div className="card-body">
-        <h3 className="card-title">{project.title}</h3>
+        <a href={project.deployed}>
+          <h3 className="card-title">{project.title}</h3>
+        </a>
         <p className="card-text">{project.languages}</p>
-        <a href={project.href} type="button" className="btn btn-light">
+        <a href={project.github} type="button" className="btn btn-light">
           <FaGithub />
         </a>
       </div>

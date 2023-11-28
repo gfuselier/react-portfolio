@@ -4,7 +4,7 @@ import Clouds from "../assets/images/clouds.jpg";
 import Laptop from "../assets/images/laptop.jpg";
 import Meeting from "../assets/images/meeting.jpg";
 import Paper from "../assets/images/paper.jpg";
-import StyleSaga from "../assets/images/StyleSaga.png";
+import StyleSaga from "../assets/images/style-saga.png";
 
 const projects = [
   {
