@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 function Project({ project }) {
   return (
-    <div class="card" key={project.id}>
+    <div className="card" key={project.id}>
       <img className="card-img-top" src={project.image} alt={project.title} height="200px" width="200px"/>
       <div className="card-body">
         <h3 className="card-title">{project.title}</h3>
