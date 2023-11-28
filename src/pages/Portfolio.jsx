@@ -44,8 +44,15 @@ const projects = [
 ]
 function Portfolio() {
     return (
-        projects.map(project => <Project project={project}/>)
-    )
+      <>
+        <h2>Portfolio</h2>
+        <div className="container">
+          {projects.map((project) => (
+            <Project project={project} />
+          ))}
+        </div>
+      </>
+    );
 }
 
 export default Portfolio;
