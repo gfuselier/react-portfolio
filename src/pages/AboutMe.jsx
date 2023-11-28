@@ -1,4 +1,4 @@
-import ProfilePic from "../assets/images/profile-pic-yellow.jpg";
+import ProfilePic from "../assets/images/profile-pic-yellow.jpeg";
 
 function AboutMe() {
   return (
