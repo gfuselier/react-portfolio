@@ -1,3 +1,7 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaStackOverflow } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer class="text-center bg-body-tertiary">
@@ -13,7 +17,7 @@ export default function Footer() {
             role="button"
             data-mdb-ripple-color="dark"
           >
-            <i class="fa-brands fa-linkedin"></i>
+            <FaLinkedin />
           </a>
           {/* Github */}
           <a
@@ -23,7 +27,7 @@ export default function Footer() {
             role="button"
             data-mdb-ripple-color="dark"
           >
-            <i class="fa-brands fa-github"></i>
+            <FaGithub />
           </a>
           {/* Stack Overflow */}
           <a
@@ -33,7 +37,7 @@ export default function Footer() {
             role="button"
             data-mdb-ripple-color="dark"
           >
-            <i class="fa-brands fa-stack-overflow"></i>
+            <FaStackOverflow />
           </a>
         </section>
       </div>
