@@ -4,38 +4,27 @@ import { FaStackOverflow } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="text-center bg-body-tertiary">
-      {/* Grid container */}
+    <footer className="text-center">
       <div className="container pt-4">
-        {/* Section: Social media */}
         <section className="mb-4">
-          {/* Linkedin */}
           <a
-            data-mdb-ripple-init
-            className="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
+            className="btn btn-link btn-lg m-1"
+            href="https://www.linkedin.com/in/giselle-fuselier-5b9273136/"
+            type="button"
           >
             <FaLinkedin />
           </a>
-          {/* Github */}
           <a
-            data-mdb-ripple-init
-            className="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
+            className="btn btn-link btn-lg m-1"
+            href="https://github.com/gfuselier"
+            type="button"
           >
             <FaGithub />
           </a>
-          {/* Stack Overflow */}
           <a
-            data-mdb-ripple-init
-            className="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
+            className="btn btn-link btn-lg m-1"
+            href="https://stackoverflow.com/users/22997318/giselle-fuselier"
+            type="button"
           >
             <FaStackOverflow />
           </a>
@@ -44,5 +33,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-// source: https://mdbootstrap.com/docs/standard/navigation/footer/
