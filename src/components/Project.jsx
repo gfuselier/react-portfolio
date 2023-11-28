@@ -1,46 +1,16 @@
-
-const projects = [
-    {
-        id: 1,
-        title: "Weather Dashboard",
-        href: "https://gfuselier.github.io/weather-dashboard",
-        languages: "HTML, CSS, JavaScript",
-        image: ""
-    },
-    {
-        id: 2,
-        title: "Movie Grabber",
-        href: "https://gfuselier.github.io/movie-grabber",
-        languages: "HTML, CSS, JavaScript, Bulma",
-        image: ""
-      }, {
-        id: 3,
-        title: "Work-Day Scheduler",
-        href: "https://gfuselier.github.io/work-day-scheduler",
-        languages: "HTML, CSS, JavaScript",
-        image: ""
-      }, {
-        id: 4,
-        title: "Password Generator",
-        href: "https://gfuselier.github.io/password-generator",
-        languages: "HTML, CSS, JavaScript",
-        image: ""
-      }, {
-        id: 5,
-        title: "Horiseon Accessibility Refactor",
-        href: "https://gfuselier.github.io/password-generator",
-        languages: "HTML, CSS",
-        image: ""
-      }, 
-
-]
-
-function Project() {
-    return (
-        <div>
-            
-        </div>
-    )
+function Project({ project }) {
+  return (
+    <div class="card" key={project.id}>
+      <img className="card-img-top" src={project.image} alt={project.title} />
+      <div className="card-body">
+        <h3 className="card-title">{project.title}</h3>
+        <p className="card-text">{project.languages}</p>
+        <a href={project.href} className="btn btn-primary">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  );
 }
 
-{projects.map(project => <Project project={project}/>)}
+export default Project;
