@@ -6,10 +6,9 @@ import './index.css'
 
 import App from './App.jsx'
 import ErrorPage from './pages/ErrorPage';
-import AboutMe from './pages/AboutMe';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import Resume from './pages/Resume'
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills'
 
 const router = createBrowserRouter([
   {
@@ -19,19 +18,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <AboutMe />,
+        element: <About />,
       },
       {
-        path: 'portfolio',
-        element: <Portfolio />,
+        path: 'projects',
+        element: <Projects />,
       },
       {
-        path: 'contact',
-        element: <Contact />,
-      },
-      {
-        path: 'resume',
-        element: <Resume />,
+        path: 'skills',
+        element: <Skills />
       }
     ],
   },
