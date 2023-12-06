@@ -5,6 +5,8 @@ import Laptop from "../assets/images/laptop.jpg";
 import Meeting from "../assets/images/meeting.jpg";
 import Paper from "../assets/images/paper.jpg";
 import StyleSaga from "../assets/images/style-saga.png";
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
 
 const projects = [
   {
@@ -59,14 +61,16 @@ const projects = [
 
 function Portfolio() {
   return (
-    <>
+    <Container >
       <h2>Portfolio</h2>
-      <div className="container">
+      <Grid container spacing={2}>
         {projects.map((project) => (
-          <Project project={project} key={project.id} />
+        <Grid item xs={12} sm={6} md={6} key={project.id}>
+          <Project project={project}  />
+          </Grid>
         ))}
-      </div>
-    </>
+      </Grid>
+    </Container>
   );
 }
 

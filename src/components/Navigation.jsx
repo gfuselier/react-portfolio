@@ -1,10 +1,8 @@
 
-export default function Navigation({ links }) {
+export default function NavLink({ text, path }) {
     return (
-      <nav className="navbar" justifycontent="flex-end" alignitems="center">
-            <ul className="nav-list">
-              {links.map((link) => link)}
-            </ul>
-      </nav>
+      <Link to={path}>
+            {text}
+           </Link>
     );
   }

@@ -17,7 +17,7 @@
 a {
   font-weight: 500;
   font-size: 1.5em;
-  color: #646cff;
+  color: black;
   text-decoration: inherit;
   margin: 20px
 }
@@ -32,7 +32,6 @@ a button {
 body {
   margin-left: 40px;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }

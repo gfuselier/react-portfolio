@@ -28,7 +28,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function Project({ project }) {
   return (
-    <Card sx={{ maxWidth: 345 }} key={project.id}>
+    <Card key={project.id}>
       <CardActionArea href={project.deployed} target="_blank" rel="noopener noreferrer">
         <CardMedia
           component="img"
